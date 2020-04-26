@@ -1,5 +1,10 @@
 text = "X-DSPAM-Confidence:    0.8475";
 x=text.find('0')       #finds the character 0
-y=float(text[x:x+7])   #since the question
+y=float(text[x:x+7])   #since the question asked for a float conversion so lets convert it to float 
 print(y)
-          
+
+    (OR)
+text = "X-DSPAM-Confidence:    0.8475";
+x=text.find('0')       #finds the character 0
+y=float(text[x:])   #goes till the last character in the string
+print(y)         
